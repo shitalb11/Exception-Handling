@@ -8,7 +8,10 @@ public class Demo6 {
             } catch (ArithmeticException e){
                 System.out.println("inner catch");
             }
+            System.out.println("rest of the try");
+        }catch(ArithmeticException e){
+            System.out.println("outer catch");
         }
-
+        System.out.println("rest of the main");
     }
 }
