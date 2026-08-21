@@ -2,14 +2,16 @@ package org.example.ExceptionHandling;
 
 public class Demo13 {
     public static void main(String[] args) {
-        try {
-            System.out.println(divide(100, 2));
-        } catch (ArithmeticException e) {
-            System.out.println("invalid denominator");
-        }
-        System.out.println("rest of the main");
+        System.out.println(divide(100, 0));
     }
-    private static int divide(int number1, int number2) throws ArithmeticException {
-        return number1 / number2;
+
+    private static int divide(int number1, int number2) {
+        int division = -1;
+        try {
+            division = number1 / number2;
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+        return division;
     }
 }
