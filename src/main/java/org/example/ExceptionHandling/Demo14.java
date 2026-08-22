@@ -9,8 +9,8 @@ public class Demo14 {
         }
         System.out.println("rest of the main");
     }
+
     private static int divide(int number1, int number2) throws ArithmeticException {
         return number1 / number2;
-    }
     }
 }
