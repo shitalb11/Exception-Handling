@@ -8,5 +8,15 @@ public class Demo16 {
             System.out.println("divide by zero");
         }
     }
+    private static void m1() {
+        m2();
     }
 
+    private static void m2() {
+        m3();
+    }
+
+    private static void m3() {
+        System.out.println(10 / 0);
+    }
+}
